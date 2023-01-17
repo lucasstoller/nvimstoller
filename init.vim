@@ -1,4 +1,3 @@
-
 call plug#begin()
 Plug 'sainnhe/sonokai'
 Plug 'vim-airline/vim-airline'
@@ -12,6 +11,7 @@ Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
 " Plugin END """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -83,7 +83,5 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Remap END """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" CoC (Conquer of Completion) BEGIN """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-so /home/lucasstoller/.config/nvim/cocConfig.vim
-
-" CoC END """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+source /home/lucasstoller/.config/nvim/cocConfig.vim
+source /home/lucasstoller/.config/nvim/plugins/treesitter.vim
