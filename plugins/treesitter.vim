@@ -4,6 +4,7 @@ lua <<EOF
       'javascript',
       'java',
       'ruby',
+      'python',
       'json',
     },
     highlight = {
